@@ -1,18 +1,5 @@
 // prompts.js
 
-export const systemPrompt = `
-The user will give a legal argument which uses the United States Constitution in its justification.
-In your output, write "Your argument:", then rewrite or paraphrase the user's argument.
-Then, write "Constitutional basis:", and write which part of the Constitution the user is citing.
-Finally, evaluate whether you think the argument is sound, given the user's Contitution citation and their argument. 
-Make sure to explain why you think the user's argument is correct or incorrect.
-Limit your evaluation to a maximum of 150 words.
-`;
-
-export const userPrompt = `
-Because of the 2nd amendment, Jacob can face no retribution for saying he wants everyone to vote for a certain presidential candidate.
-`;
-
 export const systemPromptPaper = `
 GOAL : This is a system in which a student is using artificial intelligence to improve
 their research paper topic, given several constraints.
@@ -57,6 +44,19 @@ C) To improve your topic, you may want to look into [Insert a more relevant topi
 maintaining open-endedness as to not steer the student to one specific answer]
 """
 `
+
+export const systemPrompt = `
+The user will give a legal argument which uses the United States Constitution in its justification.
+In your output, write "Your argument:", then rewrite or paraphrase the user's argument.
+Then, write "Constitutional basis:", and write which part of the Constitution the user is citing.
+Finally, evaluate whether you think the argument is sound, given the user's Contitution citation and their argument. 
+Make sure to explain why you think the user's argument is correct or incorrect.
+Limit your evaluation to a maximum of 150 words.
+`;
+
+export const userPrompt = `
+Because of the 2nd amendment, Jacob can face no retribution for saying he wants everyone to vote for a certain presidential candidate.
+`;
 
 export const userPromptPaper = `
 I want to explore how artificial intelligence is used during surgeries.

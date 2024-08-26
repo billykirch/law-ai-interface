@@ -16,14 +16,13 @@ submitBtn.addEventListener('click', async() => {
                     },
                     body: JSON.stringify({ input: userText })
                 });
-                const data = await response.json();
-                // console.log(data.response); // gpt response
+                const data = await response.json(); // get response from server / GPT api
                 gptResponse.innerText = data.response; // Set GPT response to paragraph
             } catch (error) {
                 console.error("Error getting chat response:", error);
             }
         } else {
-            console.log("Please submit your proposal");
+            console.log("User input empty on submit click");
             gptResponse.innerText = "Hmm...is there anything you'd like to discuss?"; // Set placeholder text
         }
     });
