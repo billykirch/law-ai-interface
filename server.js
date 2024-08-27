@@ -32,25 +32,3 @@ app.post('/chat', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
-
-
-// const userInterface = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-// });
-    
-// async function main() {
-//     userInterface.prompt();
-//     userInterface.on("line", async input => {
-//         const chatCompletion = await openai.chat.completions.create({
-//             messages: [
-//                 { role: 'system', content: systemPromptPaper },
-//                 { role: 'user', content: userPromptPaper }], // content should be from input
-//             model: 'gpt-3.5-turbo',
-//         });
-//         console.log(chatCompletion.choices[0].message.content); // gpt response
-//         userInterface.close();
-//     })
-// }
-
-// main();
